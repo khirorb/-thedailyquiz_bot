@@ -4,6 +4,8 @@ import asyncio
 import datetime
 import os
 from flask import Flask  # نضيف Flask حتى نظهر Web service لـ Render
+from dotenv import load_dotenv
+load_dotenv()
 
 BOT_TOKEN = os.getenv("8179014874:AAFERf_QggHNnih7Q94TcLo0njetSp6-ous")
 print(f"🔑 BOT_TOKEN = {BOT_TOKEN}")  # ← هذا السطر مهم الآن
