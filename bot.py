@@ -19,8 +19,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Hello! I am your bot.")
 
 # إضافة الأمر إلى التطبيق
-app.add_handler(CommandHandler("start", start))
+telegram_app.add_handler(CommandHandler("start", start))
 
 # تشغيل البوت
 if __name__ == "__main__":
-    app.run_polling()
+    telegram_app.run_polling()
