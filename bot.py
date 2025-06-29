@@ -6,6 +6,9 @@ import os
 from flask import Flask  # نضيف Flask حتى نظهر Web service لـ Render
 
 BOT_TOKEN = os.getenv("8179014874:AAFERf_QggHNnih7Q94TcLo0njetSp6-ous")
+print(f"🔑 BOT_TOKEN = {BOT_TOKEN}")  # ← هذا السطر مهم الآن
+app = ApplicationBuilder().token(BOT_TOKEN).build()
+
 CHAT_ID_FILE = "chat_id.txt"
 CHAT_ID = None
 
